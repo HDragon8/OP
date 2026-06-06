@@ -175,6 +175,14 @@ jobs:
           sudo -E git config --global core.abbrev auto
           df -h
 
+      - name: 修复 automake-1.17 缺失
+        run: |
+          sudo apt update
+          sudo apt install automake autoconf -y
+          sudo ln -s /usr/bin/automake /usr/local/bin/automake-1.17
+          sudo ln -s /usr/bin/aclocal /usr/local/bin/aclocal-1.17
+          automake-1.17 --version
+    
       - name: Prepare Mixedwrt
         run: |
           sudo chown -R runner:runner /home/runner/work/OP
