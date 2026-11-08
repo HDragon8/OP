@@ -15,9 +15,9 @@ clone_repo() {
 # 定义一些变量，存储仓库地址和分支名
 latest_release="$(curl -s https://github.com/openwrt/openwrt/tags | grep -Eo "v[0-9\.]+\-*r*c*[0-9]*.tar.gz" | sed -n '/[2-9][5-9]/p' | sed -n 1p | sed 's/.tar.gz//g')"
 #openwrt_repo="https://github.com/openwrt/openwrt.git"
-openwrt_repo="https://github.com/Hdragon112/openwrt"
+openwrt_repo="https://github.com/HDragon8/openwrt"
 #openwrt_add_repo="https://github.com/QiuSimons/OpenWrt-Add.git"
-openwrt_add_repo="https://github.com/Hdragon112/OpenWrt-Add"
+openwrt_add_repo="https://github.com/HDragon8/OpenWrt-Add"
 
 # 开始克隆仓库，并行执行
 #clone_repo $openwrt_repo $latest_release openwrt &
