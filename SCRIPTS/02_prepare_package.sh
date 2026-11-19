@@ -41,8 +41,8 @@ rm -rf feeds/packages/net/{xray-core,v2ray-geodata,sing-box,chinadns-ng,dns2sock
 rm -rf feeds/luci/applications/{luci-app-frps,luci-app-frpc,luci-app-zerotier}
 
 ### ADD NaiLink and AdZero ###
-git clone https://github.com/slobys/NaiLink.git package/NaiLink
-git clone https://github.com/slobys/AdZero.git package/AdZero
+#git clone https://github.com/slobys/NaiLink.git package/NaiLink
+#git clone https://github.com/slobys/AdZero.git package/AdZero
 
 # 更换 golang 版本
 rm -rf ./feeds/packages/lang/golang
