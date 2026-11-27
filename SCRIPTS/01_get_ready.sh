@@ -21,7 +21,7 @@ openwrt_add_repo="https://github.com/HDragon8/OpenWrt-Add"
 
 # 开始克隆仓库，并行执行
 #clone_repo $openwrt_repo $latest_release openwrt &
-clone_repo $openwrt_repo openwrt-25.12 openwrt &
+clone_repo $openwrt_repo noodles openwrt &
 clone_repo $openwrt_add_repo OP25 OpenWrt-Add &
 
 # 等待所有后台任务完成
